@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.png" />
+    <title>Marwin vinyls</title>
+  </head>
+
+  <body>
+    <div class="menu-container">
+      <div class="logo">
+        <img src="marwin.jpg" alt="logo" />
+      </div>
+      <ul class="menu">
+        <li><a href="main.html">Home</a></li>
+        <li><a href="main.html">Artists</a></li>
+        <li><a href="artists.html">Featured</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Rate us</a></li>
+      </ul>
+      <div class="icons_header">
+        <a href="cart.html"> <img class="icon" src="cart.png" alt="cart" /> </a>
+        <a href="register.html">
+          <img class="icon" src="user.png" alt="login" />
+        </a>
+      </div>
+    </div>
+    <div class="container-search">
+      <div class="container-bar">
+        <div class="search">
+          <h1>Lady Gaga</h1>
+          <input
+            type="text"
+            name=""
+            id="find"
+            placeholder="Search products here..."
+            onkeyup="search()"
+          />
+        </div>
+      </div>
+      <div class="cards_section">
+        <div class="card_buy">
+          <img src="btdd.jpg" alt="born to die" style="width: 100%" />
+          <h2>The Fame</h2>
+          <p class="price">$75.99</p>
+          <button class="show-button" id="showTracklistBtn">
+            Show Tracklist
+          </button>
+          <ul class="tracklist" id="tracklist">
+            <li>Just Dance</li>
+            <li>Love game</li>
+            <li>Paparazzi</li>
+            <li>Beautiful, Dirty Rich</li>
+            <li>Eh, Eh (Nothing Else I Can Say)</li>
+            <li>Pocker Face</li>
+            <li>The Fame</li>
+            <li>Money Honey</li>
+            <li>Again Again</li>
+            <li>Boys Boys Boys</li>
+            <li>Brown Eyes</li>
+            <li>Summerboy</li>
+            <li>I Like It Rough</li>
+          </ul>
+          <button>Add to Cart</button>
+        </div>
+        <div class="card_buy">
+          <img src="btdd.jpg" alt="born to die" style="width: 100%" />
+          <h2>Chromatica</h2>
+          <p class="price">$75.99</p>
+          <button class="show-button" id="showTracklistBtn">
+            Show Tracklist
+          </button>
+          <ul class="tracklist" id="tracklist">
+            <li>Chromatica I</li>
+            <li>Alice</li>
+            <li>Stupid Love</li>
+            <li>Rain On Me</li>
+            <li>Free Woman</li>
+            <li>Fun Tonight</li>
+            <li>Chromatica II</li>
+            <li>911</li>
+            <li>Plastic Doll</li>
+            <li>Sour Candy</li>
+            <li>Enigma</li>
+            <li>Replay</li>
+            <li>Chromatica III</li>
+            <li>Sine From Above</li>
+            <li>1000 Doves</li>
+            <li>Babylon</li>
+          </ul>
+          <button>Add to Cart</button>
+        </div>
+        <div class="card_buy">
+          <img src="btdd.jpg" alt="born to die" style="width: 100%" />
+          <h2>Born this way</h2>
+          <p class="price">$75.99</p>
+          <button class="show-button" id="showTracklistBtn">
+            Show Tracklist
+          </button>
+          <ul class="tracklist" id="tracklist">
+            <li>Marry The Night</li>
+            <li>Born This Way</li>
+            <li>Government Hooker</li>
+            <li>Judas</li>
+            <li>Americano</li>
+            <li>Hair</li>
+            <li>Scheiße</li>
+            <li>Bloody Mary</li>
+            <li>Bad Kids</li>
+            <li>Highway Unicorn (Road To Love)</li>
+            <li>Heavy Metal Lover</li>
+            <li>Electric Chapel</li>
+            <li>Yoü And I</li>
+            <li>The Edge Of Glory</li>
+          </ul>
+          <button>Add to Cart</button>
+        </div>
+        <div class="card_buy">
+          <img src="btdd.jpg" alt="born to die" style="width: 100%" />
+          <h2>Artpop</h2>
+          <p class="price">$75.99</p>
+          <button class="show-button" id="showTracklistBtn">
+            Show Tracklist
+          </button>
+          <ul class="tracklist" id="tracklist">
+            <li>Aura</li>
+            <li>Venus</li>
+            <li>G.U.Y.</li>
+            <li>Sexxx Dreams</li>
+            <li>MANiCURE</li>
+            <li>Do What U Want</li>
+            <li>Artpop</li>
+            <li>Swine</li>
+            <li>Donatella</li>
+            <li>Fashion!</li>
+            <li>Mary Jane Holland</li>
+            <li>Dope</li>
+            <li>Gypsy</li>
+            <li>Applause</li>
+          </ul>
+          <button>Add to Cart</button>
+        </div>
+        <div class="card_buy">
+          <img src="btdd.jpg" alt="born to die" style="width: 100%" />
+          <h2>Joanne</h2>
+          <p class="price">$75.99</p>
+          <button class="show-button" id="showTracklistBtn">
+            Show Tracklist
+          </button>
+          <ul class="tracklist" id="tracklist">
+            <li>Diamond Heart</li>
+            <li>A-Yo</li>
+            <li>Joanne</li>
+            <li>John Wayne</li>
+            <li>Dancin' In Circles</li>
+            <li>Perfect Illusion</li>
+            <li>Million Reasons</li>
+            <li>Sinner's Prayer</li>
+            <li>Come To Mama</li>
+            <li>Hey Girl</li>
+            <li>Angel Down</li>
+            <li>Grigio Girls</li>
+            <li>Just Another Day</li>
+            <li>Angel Down (Work Tape)</li>
+          </ul>
+          <button>Add to Cart</button>
+        </div>
+        <div class="card_buy">
+          <img src="btdd.jpg" alt="born to die" style="width: 100%" />
+          <h2>The fame monster</h2>
+          <p class="price">$75.99</p>
+          <button class="show-button" id="showTracklistBtn">
+            Show Tracklist
+          </button>
+          <ul class="tracklist" id="tracklist">
+            <li>Bad Romance</li>
+            <li>Alejandro</li>
+            <li>Monster</li>
+            <li>Speechless</li>
+            <li>Dance In The Dark</li>
+            <li>Telephone</li>
+            <li>So Happy I Could Die</li>
+            <li>Teeth</li>
+          </ul>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="artists.html">Featured</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p>Email: marwin@gmail.com</p>
+          <p>Phone: +7 (111) 111-1111</p>
+          <p class="address">Main addresses</p>
+          <ul>
+            <li>Gogolya 58, Almaty, Kazakhstan</li>
+            <li>Chehova 46, Ust-Kamenogorsk, Kazakhstan</li>
+            <li>Gogolevsky Boulevard 27, Moscow, Russia</li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <ul>
+            <li>
+              <a
+                href="https://www.facebook.com/MarwinFamilyShop"
+                target="_blank"
+                ><i class="fa fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://vk.com/marwinfamilyshop" target="_blank"
+                ><i class="fa fa-vk"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/Marwinfamilyshop/"
+                target="_blank"
+                ><i class="fa fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UCVztF6nuSqJellLO7Ilnx9w"
+                target="_blank"
+                ><i class="fa fa-youtube"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 MarwinVinyls. All Rights Reserved.</p>
+        <p>Designed by a student</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
