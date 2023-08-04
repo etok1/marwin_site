@@ -70,16 +70,30 @@ header h1 {
 }
 
 .icons_header {
-  display: flex;
-  align-items: center;
   margin-left: auto;
   margin-right: 20px;
 }
 
-.icons_header .icon {
-  margin-left: 10px;
-  width: 30px;
-  gap: 20px;
+.icons_header ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+.icons_header li span {
+  padding-left: 5px;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.icons_header li a {
+  text-decoration: none;
+  padding: 5px;
+  font-size: 15px;
+}
+
+.icons_header i {
+  font-size: 20px;
 }
 
 /* vinyls*/
@@ -410,143 +424,92 @@ form p a {
 .container-cart {
   width: 70%;
   height: 85%;
+  justify-content: space-around;
   background-color: #f0e8e8;
   border-radius: 20px;
   box-shadow: 0px 25px 40px #1687d933;
 }
 
-.header {
-  margin: auto;
-  width: 90%;
-  height: 15%;
+.cart_header {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.heading {
-  font-size: 25px;
-  font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 700;
-  color: #2f3841;
+  justify-content: flex-start;
+  border-bottom: 4px solid black;
+  margin: 0 auto;
 }
 
-.items {
-  margin: auto;
-  width: 90%;
-  height: 30%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.vin {
+  width: 35%;
 }
-.image {
+
+.alb {
+  width: 25%;
+}
+
+.cost {
   width: 15%;
-  text-align: center;
-}
-.information {
-  height: 100%;
-}
-.names {
-  padding-top: 5px;
-  line-height: 10px;
-  font-size: 32px;
-  margin-top: 50px;
-  font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 800;
-  color: #202020;
-  margin-right: 10px;
 }
 
-.counter {
+.quanity_cart {
   width: 15%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.btn {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #d9d9d9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 900;
-  color: #202020;
-  cursor: pointer;
-}
-.count {
-  font-size: 20px;
-  font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 900;
-  color: #202020;
 }
 
-.price_item {
-  height: 100%;
-  text-align: right;
-}
-.pricee {
-  padding-top: 20px;
-  font-size: 26px;
-  font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 800;
-  color: #202020;
-}
-.remove {
-  padding-top: 5px;
-  font-size: 14px;
-  font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 600;
-  color: #e44c4c;
-  cursor: pointer;
-}
-
-.line {
-  height: 1px;
-  background-color: #999;
-  width: 93%;
-  margin-left: 50px;
-}
-
-hr {
-  width: 66%;
-  float: right;
-  margin-right: 5%;
-}
-.checkout {
-  float: right;
-  margin-right: 5%;
-  width: 28%;
-}
 .total {
-  width: 100%;
+  width: 10%;
+}
+/*style items */
+
+.line_cart {
   display: flex;
-  justify-content: space-between;
-}
-.total-amount {
-  font-size: 34px;
-  font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 900;
-  color: #202020;
-}
-.button_buy {
-  margin-top: 5px;
+  flex-wrap: wrap;
+  align-items: center;
   width: 100%;
-  height: 40px;
-  border: none;
-  background-color: #116a7b;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 16px;
-  font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 600;
-  color: #000000;
+  margin: 0 auto;
+  text-align: center;
+  gap: 50px;
+  font-size: 20px;
 }
 
-.price_item img {
-  height: 40px;
+.items i {
+  font-size: 25px;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.items img {
+  width: 150px;
+}
+
+.price_cart {
+  width: 15%;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+
+.quanity {
+  width: 15%;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+
+/**/
+
+.total_cont {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.total_title {
+  width: 30%;
+}
+
+.total_amount {
+  width: 10%;
 }
 
 /* style footer*/
