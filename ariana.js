@@ -34,7 +34,7 @@ let vinyls = [
   {
     name: "Positions",
     tag: "positions",
-    price: 65.99,
+    price: 39.99,
     inCart: 0,
   },
 ];

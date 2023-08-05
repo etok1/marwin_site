@@ -76,11 +76,3 @@ function search() {
     }
   }
 }
-
-//shopping cartconst num = document.getElementById("span");
-//document.getElementById("btn_cart").onclick = function add() {
-//const item = cart.innerText;
-//num.innerText = parseInt(item, 10) + 1;
-//};
-
-//button rate

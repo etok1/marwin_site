@@ -144,9 +144,9 @@ function displayCart() {
             <p>$${item.price}</p>
           </div>
           <div class='quanity'>
-            <i class="fa fa-plus-circle increase"></i>
+            <i class="fa fa-dot-circle-o"></i>
             <span>${item.inCart}</span>
-            <i class="fa fa-minus-circle decrease"></i>
+            <i class="fa fa-dot-circle-o"></i>
           </div>
           <div class='remove'>
             <i class="fa fa-trash"></i> 
