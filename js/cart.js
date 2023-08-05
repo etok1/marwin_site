@@ -136,7 +136,7 @@ function displayCart() {
     Object.values(cartItems).map((item) => {
       productCont.innerHTML += `
       <div class='line_cart'>
-        <img src="${item.tag}.png"/>
+        <img src="./images/${item.tag}.png"/>
           <div class="item-details">
             <h3>${item.name}</h3>
           </div>
@@ -149,7 +149,7 @@ function displayCart() {
             <i class="fa fa-dot-circle-o"></i>
           </div>
           <div class='remove'>
-            <i class="fa fa-trash"></i> 
+            <i class="fa fa-trash remove"></i> 
           </div>
           <div class='total'>
             $${item.inCart * item.price}</div>
@@ -167,6 +167,13 @@ function displayCart() {
     `;
   }
 }
+
+let delete_prod = document.getElementsByClassName(".remove");
+let product_remove = document.getElementsByClassName(".line_cart");
+
+delete_prod.onclick = function () {
+  product_remove.style.maxHeight = "0";
+};
 
 loadCart();
 displayCart();
