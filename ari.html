@@ -18,17 +18,23 @@
         <img src="marwin.jpg" alt="logo" />
       </div>
       <ul class="menu">
-        <li><a href="main.html">Home</a></li>
-        <li><a href="main.html">Artists</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Artists</a></li>
         <li><a href="artists.html">Featured</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="contact.html">Rate us</a></li>
       </ul>
       <div class="icons_header">
-        <a href="cart.html"> <img class="icon" src="cart.png" alt="cart" /> </a>
-        <a href="register.html">
-          <img class="icon" src="user.png" alt="login" />
-        </a>
+        <ul>
+          <li class="cart_icon">
+            <a href="cart.html"
+              ><i class="fa fa-shopping-basket"></i> <span id="span">0</span></a
+            >
+          </li>
+          <li>
+            <a href="register.html"><i class="fa fa-user-circle"></i></a>
+          </li>
+        </ul>
       </div>
     </div>
     <div class="container-search">
@@ -46,7 +52,7 @@
       </div>
       <div class="cards_section">
         <div class="card_buy">
-          <img src="btdd.jpg" alt="born to die" style="width: 100%" />
+          <img src="truly.png" alt="Yours Truly" style="width: 100%" />
           <h2>Yours Truly</h2>
           <p class="price">$75.99</p>
           <button class="show-button" id="showTracklistBtn">
@@ -66,10 +72,10 @@
             <li>Popular Song</li>
             <li>Better Left Unsaid</li>
           </ul>
-          <button>Add to Cart</button>
+          <button class="add_cart" id="btn_cart">Add to Cart</button>
         </div>
         <div class="card_buy">
-          <img src="honey.jpg" alt="honeymoon" style="width: 100%" />
+          <img src="mye.png" alt="My Everything" style="width: 100%" />
           <h2>My Everything</h2>
           <p class="price">$45.99</p>
           <button class="show-button" id="showTracklistBtn">
@@ -89,10 +95,10 @@
             <li>Hands On Me</li>
             <li>My Everything</li>
           </ul>
-          <button>Add to Cart</button>
+          <button class="add_cart" id="btn_cart">Add to Cart</button>
         </div>
         <div class="card_buy">
-          <img src="honey.jpg" alt="honeymoon" style="width: 100%" />
+          <img src="woman.png" alt="Dangerous woman" style="width: 100%" />
           <h2>Dangerous Woman</h2>
           <p class="price">$50.99</p>
           <button class="show-button" id="showTracklistBtn">
@@ -111,10 +117,10 @@
             <li>Bad Decisions</li>
             <li>Thinkin' About You</li>
           </ul>
-          <button>Add to Cart</button>
+          <button class="add_cart" id="btn_cart">Add to Cart</button>
         </div>
         <div class="card_buy">
-          <img src="honey.jpg" alt="honeymoon" style="width: 100%" />
+          <img src="sweetener.png" alt="Sweetener" style="width: 100%" />
           <h2>Sweetener</h2>
           <p class="price">$78.99</p>
           <button class="show-button" id="showTracklistBtn">
@@ -137,10 +143,10 @@
             <li>Pete Davidson</li>
             <li>Get Well Soon</li>
           </ul>
-          <button>Add to Cart</button>
+          <button class="add_cart" id="btn_cart">Add to Cart</button>
         </div>
         <div class="card_buy">
-          <img src="honey.jpg" alt="honeymoon" style="width: 100%" />
+          <img src="next.png" alt="Thank U, Next" style="width: 100%" />
           <h2>Thank U, Next</h2>
           <p class="price">$65.99</p>
           <button class="show-button" id="showTracklistBtn">
@@ -160,12 +166,12 @@
             <li>Thank U, Next</li>
             <li>Break Up with Your Girlfriend, I'm Bored</li>
           </ul>
-          <button>Add to Cart</button>
+          <button class="add_cart" id="btn_cart">Add to Cart</button>
         </div>
         <div class="card_buy">
-          <img src="honey.jpg" alt="honeymoon" style="width: 100%" />
+          <img src="positions.png" alt="Positions" style="width: 100%" />
           <h2>Positions</h2>
-          <p class="price">$50.99</p>
+          <p class="price">$39.99</p>
           <button class="show-button" id="showTracklistBtn">
             Show Tracklist
           </button>
@@ -185,7 +191,7 @@
             <li>Obvious</li>
             <li>POV</li>
           </ul>
-          <button>Add to Cart</button>
+          <button class="add_cart" id="btn_cart">Add to Cart</button>
         </div>
       </div>
     </div>
@@ -196,7 +202,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="artists.html">Featured</a></li>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html">Rate Us</a></li>
           </ul>
         </div>
         <div class="footer-contact">
@@ -209,6 +215,17 @@
             <li>Chehova 46, Ust-Kamenogorsk, Kazakhstan</li>
             <li>Gogolevsky Boulevard 27, Moscow, Russia</li>
           </ul>
+          <div id="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.6091868713065!2d76.94078107657442!3d43.259611877797376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836e979818fffd%3A0x1a0640edd60e6329!2z0YPQu9C40YbQsCDQk9C-0LPQvtC70Y8gNTgsINCQ0LvQvNCw0YLRiyAwNTAwMDA!5e0!3m2!1sru!2skz!4v1691226153187!5m2!1sru!2skz"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
         <div class="footer-social">
           <h3>Follow Us</h3>
@@ -248,5 +265,7 @@
       </div>
     </footer>
     <script src="script.js"></script>
+    <script src="ariana.js"></script>
+    <script src="cart.js"></script>
   </body>
 </html>

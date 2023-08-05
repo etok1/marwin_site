@@ -18,17 +18,23 @@
         <img src="marwin.jpg" alt="logo" />
       </div>
       <ul class="menu">
-        <li><a href="main.html">Home</a></li>
-        <li><a href="main.html">Artists</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Artists</a></li>
         <li><a href="artists.html">Featured</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="contact.html">Rate us</a></li>
       </ul>
       <div class="icons_header">
-        <a href="cart.html"> <img class="icon" src="cart.png" alt="cart" /> </a>
-        <a href="register.html">
-          <img class="icon" src="user.png" alt="login" />
-        </a>
+        <ul>
+          <li class="cart_icon">
+            <a href="cart.html"
+              ><i class="fa fa-shopping-basket"></i> <span id="span">0</span></a
+            >
+          </li>
+          <li>
+            <a href="register.html"><i class="fa fa-user-circle"></i></a>
+          </li>
+        </ul>
       </div>
     </div>
     <div class="container-search">
@@ -46,7 +52,7 @@
       </div>
       <div class="cards_section">
         <div class="card_buy">
-          <img src="btdd.jpg" alt="born to die" style="width: 100%" />
+          <img src="red.png" alt="Red" style="width: 100%" />
           <h2>Red</h2>
           <p class="price">$75.99</p>
           <button class="show-button" id="showTracklistBtn">
@@ -73,10 +79,10 @@
             <li>Come back...be here</li>
             <li>Girl at home</li>
           </ul>
-          <button>Add to Cart</button>
+          <button class="add_cart" id="btn_cart">Add to Cart</button>
         </div>
         <div class="card_buy">
-          <img src="honey.jpg" alt="honeymoon" style="width: 100%" />
+          <img src="sn.png" alt="Speak now" style="width: 100%" />
           <h2>Speak now</h2>
           <p class="price">$45.99</p>
           <button class="show-button" id="showTracklistBtn">
@@ -98,10 +104,10 @@
             <li>Last kiss</li>
             <li>Long live</li>
           </ul>
-          <button>Add to Cart</button>
+          <button class="add_cart" id="btn_cart">Add to Cart</button>
         </div>
         <div class="card_buy">
-          <img src="honey.jpg" alt="honeymoon" style="width: 100%" />
+          <img src="fearless.png" alt="Fearless" style="width: 100%" />
           <h2>Fearless</h2>
           <p class="price">$50.99</p>
           <button class="show-button" id="showTracklistBtn">
@@ -126,10 +132,10 @@
             <li>The best day</li>
             <li>Change</li>
           </ul>
-          <button>Add to Cart</button>
+          <button class="add_cart" id="btn_cart">Add to Cart</button>
         </div>
         <div class="card_buy">
-          <img src="honey.jpg" alt="honeymoon" style="width: 100%" />
+          <img src="ts.png" alt="Taylor Swift" style="width: 100%" />
           <h2>Taylor Swift</h2>
           <p class="price">$78.99</p>
           <button class="show-button" id="showTracklistBtn">
@@ -151,10 +157,10 @@
             <li>Invisible</li>
             <li>A perfectly good heart</li>
           </ul>
-          <button>Add to Cart</button>
+          <button class="add_cart" id="btn_cart">Add to Cart</button>
         </div>
         <div class="card_buy">
-          <img src="honey.jpg" alt="honeymoon" style="width: 100%" />
+          <img src="Evermore.png" alt="Evermore" style="width: 100%" />
           <h2>Evermore</h2>
           <p class="price">$65.99</p>
           <button class="show-button" id="showTracklistBtn">
@@ -177,10 +183,10 @@
             <li>marjorie</li>
             <li>evermore</li>
           </ul>
-          <button>Add to Cart</button>
+          <button class="add_cart" id="btn_cart">Add to Cart</button>
         </div>
         <div class="card_buy">
-          <img src="honey.jpg" alt="honeymoon" style="width: 100%" />
+          <img src="folklore.png" alt="Folklore" style="width: 100%" />
           <h2>Folklore</h2>
           <p class="price">$50.99</p>
           <button class="show-button" id="showTracklistBtn">
@@ -204,10 +210,10 @@
             <li>peace</li>
             <li>hoax</li>
           </ul>
-          <button>Add to Cart</button>
+          <button class="add_cart" id="btn_cart">Add to Cart</button>
         </div>
         <div class="card_buy">
-          <img src="honey.jpg" alt="honeymoon" style="width: 100%" />
+          <img src="reputation.png" alt="Reputation" style="width: 100%" />
           <h2>Reputation</h2>
           <p class="price">$60.99</p>
           <button class="show-button" id="showTracklistBtn">
@@ -230,10 +236,10 @@
             <li>Call It What You Want</li>
             <li>New Years Day</li>
           </ul>
-          <button>Add to Cart</button>
+          <button class="add_cart" id="btn_cart">Add to Cart</button>
         </div>
         <div class="card_buy">
-          <img src="honey.jpg" alt="honeymoon" style="width: 100%" />
+          <img src="midnights.png" alt="Midnights" style="width: 100%" />
           <h2>Midnights</h2>
           <p class="price">$80.99</p>
           <button class="show-button" id="showTracklistBtn">
@@ -254,10 +260,10 @@
             <li>Sweet Nothing</li>
             <li>Mastermind</li>
           </ul>
-          <button>Add to Cart</button>
+          <button class="add_cart" id="btn_cart">Add to Cart</button>
         </div>
         <div class="card_buy">
-          <img src="honey.jpg" alt="honeymoon" style="width: 100%" />
+          <img src="lover.png" alt="Lover" style="width: 100%" />
           <h2>Lover</h2>
           <p class="price">$89.99</p>
           <button class="show-button" id="showTracklistBtn">
@@ -282,10 +288,10 @@
             <li>It's Nice to Have a Friend</li>
             <li>Daylight</li>
           </ul>
-          <button>Add to Cart</button>
+          <button class="add_cart" id="btn_cart">Add to Cart</button>
         </div>
         <div class="card_buy">
-          <img src="honey.jpg" alt="honeymoon" style="width: 100%" />
+          <img src="1989.png" alt="1989" style="width: 100%" />
           <h2>1989</h2>
           <p class="price">$89.99</p>
           <button class="show-button" id="showTracklistBtn">
@@ -306,7 +312,7 @@
             <li>I Know Places</li>
             <li>Clean</li>
           </ul>
-          <button>Add to Cart</button>
+          <button class="add_cart" id="btn_cart">Add to Cart</button>
         </div>
       </div>
     </div>
@@ -317,7 +323,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="artists.html">Featured</a></li>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html">Rate Us</a></li>
           </ul>
         </div>
         <div class="footer-contact">
@@ -330,6 +336,17 @@
             <li>Chehova 46, Ust-Kamenogorsk, Kazakhstan</li>
             <li>Gogolevsky Boulevard 27, Moscow, Russia</li>
           </ul>
+          <div id="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.6091868713065!2d76.94078107657442!3d43.259611877797376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836e979818fffd%3A0x1a0640edd60e6329!2z0YPQu9C40YbQsCDQk9C-0LPQvtC70Y8gNTgsINCQ0LvQvNCw0YLRiyAwNTAwMDA!5e0!3m2!1sru!2skz!4v1691226153187!5m2!1sru!2skz"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
         <div class="footer-social">
           <h3>Follow Us</h3>
@@ -369,5 +386,7 @@
       </div>
     </footer>
     <script src="script.js"></script>
+    <script src="taylor.js"></script>
+    <script src="cart.js"></script>
   </body>
 </html>

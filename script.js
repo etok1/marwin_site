@@ -76,7 +76,3 @@ function search() {
     }
   }
 }
-
-//shopping cart
-
-//button rate

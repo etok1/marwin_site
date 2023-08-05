@@ -3,9 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="favicon.png" />
     <title>Marwin vinyls</title>
+    <style>
+      body {
+        background-color: #116a7b;
+      }
+    </style>
   </head>
 
   <body>
@@ -14,66 +23,30 @@
         <img src="marwin.jpg" alt="logo" />
       </div>
       <ul class="menu">
-        <li><a href="main.html">Home</a></li>
-        <li><a href="main.html">Artists</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Artists</a></li>
         <li><a href="artists.html">Featured</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="contact.html">Rate us</a></li>
       </ul>
       <div class="icons_header">
-        <a href="cart.html"> <img class="icon" src="cart.png" alt="cart" /> </a>
-        <a href="register.html">
-          <img class="icon" src="user.png" alt="login" />
-        </a>
+        <ul>
+          <li class="cart_icon">
+            <a href="cart.html"
+              ><i class="fa fa-shopping-basket"></i> <span id="span">0</span></a
+            >
+          </li>
+          <li>
+            <a href="register.html"><i class="fa fa-user-circle"></i></a>
+          </li>
+        </ul>
       </div>
     </div>
-    <div class="page">
-      <div class="container-cart">
-        <div class="header">
-          <h3 class="heading">Shopping Cart</h3>
-        </div>
-        <div class="items">
-          <div class="image"><img src="honey.png" style="height: 170px" /></div>
-          <div class="information">
-            <h1 class="names">Blue Banisters</h1>
-          </div>
-          <div class="counter">
-            <div class="btn">+</div>
-            <div class="count">1</div>
-            <div class="btn">-</div>
-          </div>
-          <div class="price_item">
-            <div class="pricee">$75.99</div>
-            <div class="remove"><img src="delete.svg" /></div>
-          </div>
-        </div>
-        <div class="line"></div>
-        <div class="items">
-          <div class="image"><img src="honey.png" style="height: 170px" /></div>
-          <div class="information">
-            <h1 class="names">Born to die</h1>
-          </div>
-          <div class="counter">
-            <div class="btn">+</div>
-            <div class="count">1</div>
-            <div class="btn">-</div>
-          </div>
-          <div class="price_item">
-            <div class="pricee">$75.99</div>
-            <div class="remove"><img src="delete.svg" /></div>
-          </div>
-        </div>
-        <hr />
-        <div class="checkout">
-          <div class="cart-items"></div>
-          <div class="total">
-            <div class="total-amount">Total: $0.00</div>
-          </div>
-          <button class="button_buy">Purchase</button>
-        </div>
-      </div>
+    <div class="cart">
+      <div class="items"></div>
+      <div class="checkout"></div>
     </div>
-
     <script src="script.js"></script>
+    <script src="cart.js"></script>
   </body>
 </html>
