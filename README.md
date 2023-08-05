@@ -1,3 +1,3 @@
 # marwin_site
 
-This is a project for marwin store
+This is a website for marwin store.

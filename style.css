@@ -431,6 +431,8 @@ form p a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 14px;
 }
 
 .line_cart {
@@ -441,12 +443,18 @@ form p a {
   gap: 50px;
 }
 
+.line {
+  height: 1px;
+  background-color: #b1afaf;
+  margin-left: 40px;
+}
+
 .items img {
   width: 100px;
   height: 100px;
   object-fit: cover;
   margin-right: 1rem;
-  margin-left: 10px;
+  margin-left: 30px;
   margin-top: 30px;
 }
 

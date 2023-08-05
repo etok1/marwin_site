@@ -155,6 +155,7 @@ function displayCart() {
             $${item.inCart * item.price}</div>
           </div>
       </div>
+      <div class='line'></div>
       `;
     });
 
