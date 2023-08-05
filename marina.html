@@ -25,10 +25,16 @@
         <li><a href="contact.html">Rate us</a></li>
       </ul>
       <div class="icons_header">
-        <a href="cart.html"> <img class="icon" src="cart.png" alt="cart" /> </a>
-        <a href="register.html">
-          <img class="icon" src="user.png" alt="login" />
-        </a>
+        <ul>
+          <li class="cart_icon">
+            <a href="cart.html"
+              ><i class="fa fa-shopping-basket"></i> <span id="span">0</span></a
+            >
+          </li>
+          <li>
+            <a href="register.html"><i class="fa fa-user-circle"></i></a>
+          </li>
+        </ul>
       </div>
     </div>
     <div class="container-search">
@@ -67,7 +73,7 @@
             <li>Numb</li>
             <li>Guilty</li>
           </ul>
-          <button>Add to Cart</button>
+          <button class="add_cart" id="btn_cart">Add to Cart</button>
         </div>
         <div class="card_buy">
           <img src="honey.jpg" alt="honeymoon" style="width: 100%" />
@@ -89,7 +95,7 @@
             <li>Valley Of The Dolls</li>
             <li>Fear And Loathing</li>
           </ul>
-          <button>Add to Cart</button>
+          <button class="add_cart" id="btn_cart">Add to Cart</button>
         </div>
         <div class="card_buy">
           <img src="honey.jpg" alt="honeymoon" style="width: 100%" />
@@ -112,7 +118,7 @@
             <li>Savages</li>
             <li>Immortal</li>
           </ul>
-          <button>Add to Cart</button>
+          <button class="add_cart" id="btn_cart">Add to Cart</button>
         </div>
         <div class="card_buy">
           <img src="honey.jpg" alt="honeymoon" style="width: 100%" />
@@ -138,7 +144,7 @@
             <li>No More Suckers</li>
             <li>Soft To Be Strong</li>
           </ul>
-          <button>Add to Cart</button>
+          <button class="add_cart" id="btn_cart">Add to Cart</button>
         </div>
         <div class="card_buy">
           <img src="honey.jpg" alt="honeymoon" style="width: 100%" />
@@ -159,7 +165,7 @@
             <li>Flowers</li>
             <li>Goodbye</li>
           </ul>
-          <button>Add to Cart</button>
+          <button class="add_cart" id="btn_cart">Add to Cart</button>
         </div>
       </div>
     </div>
@@ -222,5 +228,7 @@
       </div>
     </footer>
     <script src="script.js"></script>
+    <script src="marina.js"></script>
+    <script src="cart.js"></script>
   </body>
 </html>

@@ -112,22 +112,23 @@ function setItems(product) {
 function totalCost(product) {
   let cartCost = localStorage.getItem("totalCost");
 
-  console.log("Existing cartCost:", cartCost); // Check the existing value
+  console.log("Existing cartCost:", cartCost);
 
   if (cartCost != null) {
     cartCost = parseInt(cartCost);
     localStorage.setItem("totalCost", cartCost + product.price);
-    console.log("Updated cartCost:", cartCost + product.price); // Check the updated value
+    console.log("Updated cartCost:", cartCost + product.price);
   } else {
     localStorage.setItem("totalCost", product.price);
-    console.log("New cartCost:", product.price); // Check the new value
+    console.log("New cartCost:", product.price);
   }
 }
 
 function displayCart() {
   let cartItems = localStorage.getItem("productsinCart");
   cartItems = JSON.parse(cartItems);
-  let productCont = document.querySelector(".items"); // Use a unique class or ID here
+  let productCont = document.querySelector(".items");
+  let costContainer = document.querySelector(".checkout");
   let cartCost = localStorage.getItem("totalCost");
 
   if (cartItems && productCont) {
@@ -135,27 +136,31 @@ function displayCart() {
     Object.values(cartItems).map((item) => {
       productCont.innerHTML += `
       <div class='line_cart'>
-        <div class="item_cart">
+        <img src="${item.tag}.png"/>
+          <div class="item-details">
+            <h3>${item.name}</h3>
+          </div>
+          <div class='price'>
+            <p>$${item.price}</p>
+          </div>
+          <div class='quanity'>
+            <i class="fa fa-plus-circle increase"></i>
+            <span>${item.inCart}</span>
+            <i class="fa fa-minus-circle decrease"></i>
+          </div>
+          <div class='remove'>
             <i class="fa fa-trash"></i> 
-            <img src='${item.tag}.png'/>
-            <span>${item.name}</span>
-        </div>
-        <div class='price-cart'>${item.price}</div>
-        <div class='quantity'>
-          <i class="fa fa-plus-circle increase"></i>
-          <span>${item.inCart}</span>
-          <i class="fa fa-minus-circle decrease"></i>
-        </div> 
-        <div class='total'>
-          $${item.inCart * item.price}</div>
-        </div>
+          </div>
+          <div class='total'>
+            $${item.inCart * item.price}</div>
+          </div>
       </div>
       `;
     });
 
-    productCont.innerHTML += `
+    costContainer.innerHTML += `
       <div class='total-cont'>
-        <h5 class='total-title'>Checkout</h5>
+        <button class='total-title'>Checkout</button>
         <h5 class='total-amount'>$${cartCost}</h5>
       </div>
     `;

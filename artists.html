@@ -1,123 +1,151 @@
 <!DOCTYPE html>
-<html><head><head>
+<html>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="favicon.png">
+    <link rel="icon" href="favicon.png" />
     <title>Marwin vinyls</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="menu-container">
-        <div class="logo">
-            <img src="marwin.jpg" alt="logo" />
-        </div>
-        <ul class="menu">
-            <li><a href="main.html">Home</a></li>
-            <li><a href="main.html">Artists</a></li>
-            <li><a href="artists.html">Featured</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Rate us</a></li>
-        </ul>
-        <div class="icons_header">
-            <a href="cart.html">
-              <img class="icon" src="cart.png" alt="cart" /> </a
+      <div class="logo">
+        <img src="marwin.jpg" alt="logo" />
+      </div>
+      <ul class="menu">
+        <li><a href="main.html">Home</a></li>
+        <li><a href="main.html">Artists</a></li>
+        <li><a href="artists.html">Featured</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Rate us</a></li>
+      </ul>
+      <div class="icons_header">
+        <ul>
+          <li class="cart_icon">
+            <a href="cart.html"
+              ><i class="fa fa-shopping-basket"></i> <span id="span">0</span></a
             >
-            <a href="register.html">
-              <img class="icon" src="user.png" alt="login" />
-            </a>
-          </div>
+          </li>
+          <li>
+            <a href="register.html"><i class="fa fa-user-circle"></i></a>
+          </li>
+        </ul>
+      </div>
     </div>
     <div class="section">
-        <h1 class="Featured">Bestsellers</h1>
+      <h1 class="Featured">Bestsellers</h1>
     </div>
     <div class="cards_section">
-            <div class="card_buy">
-                <img src="btd.jpg" alt="Denim Jeans" style="width:100%">
-                <h1>Born to die</h1>
-                <p class="price">$75.99</p>
-                <p>The album was the world's 5th best-selling album of 2012, and had sold over 7 million copies by 2014. In 2021, it became the second album by a woman to spend more than 400 weeks on the Billboard 200</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="card_buy">
-                <img src="midnights.jpg" alt="Denim Jeans" style="width:100%">
-                <h1>Midnights</h1>
-                <p class="price">$69.99</p>
-                <p> The album broke sold more than 1.6 million units in its first week, and broke several streaming records and took over the top ten spots on the Billboard Hot 100.</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="card_buy">
-                <img src="1989.jpg" alt="Denim Jeans" style="width:100%">
-                <h1>1989</h1>
-                <p class="price">$71.99</p>
-                <p>1989 won Album of the Year and Best Pop Vocal Album at the 2016 Grammy Awards, and it was listed in all-time album rankings by Rolling Stone and Consequence.</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="card_buy">
-                <img src="nfr.jpg" alt="Denim Jeans" style="width:100%">
-                <h1>Norman Fucking Rockwell</h1>
-                <p class="price">$79.99</p>
-                <p>Becoming Del Rey's fourth number one album in the country, reached the top 5 in over 20 countries. In the United States it peaked at number 3 on the Billboard 200.</p>
-                <button>Add to Cart</button>
-            </div>
-        </div>
+      <div class="card_buy">
+        <img src="btd.jpg" alt="Denim Jeans" style="width: 100%" />
+        <h1>Born to die</h1>
+        <p class="price">$75.99</p>
+        <p>
+          The album was the world's 5th best-selling album of 2012, and had sold
+          over 7 million copies by 2014. In 2021, it became the second album by
+          a woman to spend more than 400 weeks on the Billboard 200
+        </p>
+        <button class="add_cart" id="btn_cart">Add to Cart</button>
+      </div>
+      <div class="card_buy">
+        <img src="midnights.jpg" alt="Denim Jeans" style="width: 100%" />
+        <h1>Midnights</h1>
+        <p class="price">$69.99</p>
+        <p>
+          The album broke sold more than 1.6 million units in its first week,
+          and broke several streaming records and took over the top ten spots on
+          the Billboard Hot 100.
+        </p>
+        <button class="add_cart" id="btn_cart">Add to Cart</button>
+      </div>
+      <div class="card_buy">
+        <img src="1989.jpg" alt="Denim Jeans" style="width: 100%" />
+        <h1>1989</h1>
+        <p class="price">$71.99</p>
+        <p>
+          1989 won Album of the Year and Best Pop Vocal Album at the 2016 Grammy
+          Awards, and it was listed in all-time album rankings by Rolling Stone
+          and Consequence.
+        </p>
+        <button class="add_cart" id="btn_cart">Add to Cart</button>
+      </div>
+      <div class="card_buy">
+        <img src="nfr.jpg" alt="Denim Jeans" style="width: 100%" />
+        <h1>Norman Fucking Rockwell</h1>
+        <p class="price">$79.99</p>
+        <p>
+          Becoming Del Rey's fourth number one album in the country, reached the
+          top 5 in over 20 countries. In the United States it peaked at number 3
+          on the Billboard 200.
+        </p>
+        <button class="add_cart" id="btn_cart">Add to Cart</button>
+      </div>
     </div>
     <footer>
-        <div class="footer-container">
-          <div class="footer-links">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="artists.html">Featured</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-          <div class="footer-contact">
-            <h3>Contact Us</h3>
-            <p>Email: marwin@gmail.com</p>
-            <p>Phone: +7 (111) 111-1111</p>
-            <p class="address">Main addresses</p>
-            <ul>
-              <li>Gogolya 58, Almaty, Kazakhstan</li>
-              <li>Chehova 46, Ust-Kamenogorsk, Kazakhstan</li>
-              <li>Gogolevsky Boulevard 27, Moscow, Russia</li>
-            </ul>
-          </div>
-          <div class="footer-social">
-            <h3>Follow Us</h3>
-            <ul>
-              <li>
-                <a
-                  href="https://www.facebook.com/MarwinFamilyShop"
-                  target="_blank"
-                  ><i class="fa fa-facebook"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://vk.com/marwinfamilyshop" target="_blank"
-                  ><i class="fa fa-vk"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/Marwinfamilyshop/"
-                  target="_blank"
-                  ><i class="fa fa-instagram"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="https://www.youtube.com/channel/UCVztF6nuSqJellLO7Ilnx9w"
-                  target="_blank"
-                  ><i class="fa fa-youtube"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
+      <div class="footer-container">
+        <div class="footer-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="artists.html">Featured</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
-        <div class="footer-bottom">
-          <p>&copy; 2023 MarwinVinyls. All Rights Reserved.</p>
-          <p>Designed by a student</p>
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p>Email: marwin@gmail.com</p>
+          <p>Phone: +7 (111) 111-1111</p>
+          <p class="address">Main addresses</p>
+          <ul>
+            <li>Gogolya 58, Almaty, Kazakhstan</li>
+            <li>Chehova 46, Ust-Kamenogorsk, Kazakhstan</li>
+            <li>Gogolevsky Boulevard 27, Moscow, Russia</li>
+          </ul>
         </div>
-      </footer>
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <ul>
+            <li>
+              <a
+                href="https://www.facebook.com/MarwinFamilyShop"
+                target="_blank"
+                ><i class="fa fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://vk.com/marwinfamilyshop" target="_blank"
+                ><i class="fa fa-vk"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/Marwinfamilyshop/"
+                target="_blank"
+                ><i class="fa fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UCVztF6nuSqJellLO7Ilnx9w"
+                target="_blank"
+                ><i class="fa fa-youtube"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 MarwinVinyls. All Rights Reserved.</p>
+        <p>Designed by a student</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="artists.js"></script>
+    <script src="cart.js"></script>
+  </body>
 </html>
